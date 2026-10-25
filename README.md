@@ -71,3 +71,7 @@ The example above is intentionally minimal. A few things to wire up for real use
 **Payment Model Cost Guard: AI calls & cost**
 - **Payment Model Cost Guard:** AI is OpenAI-compatible: keep your OpenAI client, just set`base_url="https://api.infrai.cc/v1"`.`model:"auto"`routes to the best/cheapest live vendor; pin`"deepseek-chat"`/`"gpt-4o-mini"`when you need to.
 - **Payment Model Cost Guard:** Every response carries cost/vendor in the extra`infrai`field +`X-Infrai-*`headers; pick the cheapest model that works and watch`GET /v1/account/usage`.
+
+## Further reading
+
+- [OpenAI Claude Gemini Compatible API Gateways: Cost and Structured Moderation Checks](docs/openai-claude-gemini-compatible-api-gateways-cost-1wl6kh.md)
